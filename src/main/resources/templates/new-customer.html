@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Customer</title>
+</head>
+<body>
+<h1>Create new customer</h1>
+
+<form th:object="${customer}" th:action="@{/save}" method="post">
+    Customer number:<br>
+    <input type="number" th:field="*{customernumber}"><br>
+    Customer name:<br>
+    <input type="text" th:field="*{customername}"><br>
+    Contact last name:<br>
+    <input type="text" th:field="*{contactlastname}"><br>
+    Contact first name:<br>
+    <input type="text" th:field="*{contactfirstname}"><br>
+    Contact phone:<br>
+    <input type="number" th:field="*{phone}"><br>
+    AddressLine 1:<br>
+    <input type="text" th:field="*{addressline1}"><br>
+    AddressLine 2:<br>
+    <input type="text" th:field="*{addressline2}"><br>
+    City:<br>
+    <input type="text" th:field="*{city}"><br>
+    State:<br>
+    <input type="text" th:field="*{state}"><br>
+    Postal code:<br>
+    <input type="number" th:field="*{postalcode}"><br>
+    Country:<br>
+    <input type="text" th:field="*{country}"><br>
+    Sales Rep Employee Number:<br>
+    <input type="number" th:field="*{salesrepemployeenumber}"><br>
+    Cred limit:<br>
+    <input type="number" th:field="*{credlimit}"><br>
+    <input type="submit" />
+
+</form>
+</body>
+</html>
