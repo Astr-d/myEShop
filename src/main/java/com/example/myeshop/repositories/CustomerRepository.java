@@ -1,6 +1,11 @@
 package com.example.myeshop.repositories;
 
 import com.example.myeshop.entities.Customer;
+import com.example.myeshop.entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerRepository extends JpaRepository<Customer, Long> {}
+import java.util.List;
+
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
+
+}
