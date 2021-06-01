@@ -4,15 +4,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
     <title>Cart</title>
 </head>
 <body>
-<insert th:insert="fragments/header.html"></insert>
-    This is my cart
-<insert th:insert="fragments/footer.html"></insert>
+<div th:insert="fragments/global :: header"></div>
+This is my cart
+<div th:insert="fragments/global :: footer"></div>
 </body>
 </html>

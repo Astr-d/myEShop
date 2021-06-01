@@ -15,17 +15,15 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    /*@GetMapping("/")
-    public String viewHomePage() {
-        return "products";
-    }*/
-
-    @GetMapping("/")
+    @GetMapping("/products")
     public String viewHomePage(Model model) {
         List<Product> products = productRepository.findAll(); //findAll() standard method from spring
         model.addAttribute("products", products);
-        return "home";
+        return "products";
     }
 
-
+    @GetMapping("/details")
+    public String viewDetails(Model model){
+        return "product-details";
+    }
 }
